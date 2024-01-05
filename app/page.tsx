@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-row justify-between p-4 container mx-auto bg-gray-100">
-      <aside className='w-3/12 p-2'>
+    <main className="flex min-h-screen flex-row justify-between p-4 container mx-auto bg-gray-100 max-[768px]:flex-col">
+      <aside className='w-3/12 p-2 max-[768px]:w-full'>
         <div className='bg-white p-4 border-2 mb-3'>
           <h1 className='font-bold'>Dev Digest</h1>
           <p>Curated content for developers</p>
@@ -20,13 +20,13 @@ export default function Home() {
           <p>Coming soon...</p>
         </div>
       </aside>
-      <div className='w-6/12 p-2'>
+      <div className='w-6/12 p-2 max-[768px]:w-full'>
         <Image src={DevDigestGraphic.src} height={720} width={1280} alt='Dev Digest' className='mb-3' />
         <div className='bg-white p-4 border-2'>
           <p>Coming soon...</p>
         </div>
       </div>
-      <aside className='w-3/12 p-2'>
+      <aside className='w-3/12 p-2 max-[768px]:w-full'>
         <div className='bg-white p-4 border-2 mb-3'>
           <h1 className='font-bold'>#trending</h1>
           <a className='underline text-blue-700 list-item ml-4' target='_blank' href='https://bun.sh/'>Bun</a>
